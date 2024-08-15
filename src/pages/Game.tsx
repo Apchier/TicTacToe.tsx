@@ -73,7 +73,7 @@ export default function Game() {
         setXIsNext(!isXNext);
     }
 
-    const moves = history.map((squares, move) => {
+    const moves = history.map((_, move) => {
         let description = "";
         if (move) {
             description = "Go to move #" + move;
